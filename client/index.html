@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Bucket List</title>
+</head>
+<body>
+    <header>
+        <h1>Bucket List Tracker</h1>
+        <!-- <h2>What do you want to do before you die?</h2> -->
+        
+        
+    </header>
+    
+    <section id="enterSection">
+    <div id="enter">
+        <p id="enterHead">Enter a New Bucket List Item</p>
+        <input id="newInput" type="text">
+        <button id="newBtn">Add to Bucket List</button>
+    </div>
+    </section>
+    
+    <section id="columns">
+
+        <div id="bucketList">
+            <div>
+                <h3>BUCKET LIST</h3>
+            </div>
+            <div id="listDisplay">
+            </div>
+            <div id="acBt">
+            <button id="accomplishBtn" onclick="openForm()">Mark an Item Complete</button>
+            </div>
+        </div>
+
+    
+        <div id="completed">
+
+            <div>
+                <h3>ACCOMPLISHED</h3>
+            </div>
+            <div id="activityDisplay">
+
+            </div>
+            <div id="detailsAllBtn">
+                <button id="details">Show Accomplished Details</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="detailsForm">
+
+        <div class="form-popup" id="formPop">
+            <form id="myForm" class="myForm">
+                <p id="formHead">Accomplished an item on your Bucket List? Write about it!</p>
+                <select id="itemSelect"></select>
+                <br>
+                <input id="imgInput" type="text" placeholder="Enter an Image URL"><br>
+                <input type="text" id="descInput" placeholder="Write About Your Achievement"><br>
+                <div id="updateDets">
+                    <button id="updateDetailsBtn">Complete</button>
+                </div>
+            </form>
+            <img id="closeForm" onclick="closeForm()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJe-7_-5kEFr7ANfj8oIQRL6R-sUl1nRLnRSKF6XADSCN616UmGlMaH2A2WnDVW7Gzok&usqp=CAU"></img>
+        </div>
+    </section>
+    <br>
+
+    <section id="activityDetails">
+        
+    </section>
+    <br>
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
